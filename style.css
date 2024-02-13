@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: wheat;
+    text-align: center;
 }
 #game--board {
     width: 100%;
