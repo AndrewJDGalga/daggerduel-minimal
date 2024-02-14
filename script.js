@@ -1,5 +1,10 @@
 const tokenCount = 20;
 
+const blackBladePath = 'assets/blackBladeToken.svg';
+const blackBootPath = 'assets/blackBootToken.svg';
+const whiteBladePath = 'assets/whiteBladeToken.svg';
+const whiteBootPath = 'assets/whiteBootToken.svg';
+
 const generateTokens = (pageTarget, elementToGenerate, count) =>{
     for(let i = 0; i < count; i++) {
         $(pageTarget).append(elementToGenerate);
@@ -24,9 +29,11 @@ $("document").ready(()=>{
         if($('#player1-footing').data('facing') === 'blade'){
             console.log('blade set');
             $('#player1-footing').data('facing', 'boot');
+            $('#footing-img-black').attr('src',blackBootPath);
         } else {
             console.log('boot set');
             $('#player1-footing').data('facing', 'blade');
+            $('#footing-img-black').attr('src',blackBladePath);
         }
     });
     $('#player2-footing').on('click', ()=>{
