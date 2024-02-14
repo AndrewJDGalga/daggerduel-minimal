@@ -3,6 +3,11 @@ body {
     margin: 0 var(--three-rem) 0 var(--three-rem);
     background-color: wheat;
 }
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+}
 .game-icon {
     width: var(--three-rem);
 }
