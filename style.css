@@ -1,7 +1,12 @@
 body {
-    margin: 0;
+    --three-rem: 3rem;
+    margin: 0 var(--three-rem) 0 var(--three-rem);
     background-color: wheat;
 }
+.game-icon {
+    width: var(--three-rem);
+}
+
 #game--board {
     width: 50%;
     min-width: 500px;
