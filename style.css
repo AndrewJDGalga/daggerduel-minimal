@@ -9,6 +9,10 @@ body {
 .small-number-tracker {
     width: 2rem;
 }
+.game--prototype {
+    display: flex;
+    flex-direction: column;
+}
 .player--aid {
     display: flex;
     flex-direction: row;
