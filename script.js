@@ -27,11 +27,9 @@ $("document").ready(()=>{
     $('#player1-footing').on('click', ()=>{
         
         if($('#player1-footing').data('facing') === 'blade'){
-            console.log('blade set');
             $('#player1-footing').data('facing', 'boot');
             $('#footing-img-black').attr('src',blackBootPath);
         } else {
-            console.log('boot set');
             $('#player1-footing').data('facing', 'blade');
             $('#footing-img-black').attr('src',blackBladePath);
         }
@@ -41,9 +39,11 @@ $("document").ready(()=>{
         if($('#player2-footing').data('facing') === 'blade'){
             console.log('blade set');
             $('#player2-footing').data('facing', 'boot');
+            $('#footing-img-white').attr('src',whiteBootPath);
         } else {
             console.log('boot set');
             $('#player2-footing').data('facing', 'blade');
+            $('#footing-img-white').attr('src',whiteBladePath);
         }
     });
 });
