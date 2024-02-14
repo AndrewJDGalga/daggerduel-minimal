@@ -28,7 +28,15 @@ $("document").ready(()=>{
             console.log('boot set');
             $('#player1-footing').data('facing', 'blade');
         }
+    });
+    $('#player2-footing').on('click', ()=>{
         
-        //console.log($('#player1-footing').data('facing'));
+        if($('#player2-footing').data('facing') === 'blade'){
+            console.log('blade set');
+            $('#player2-footing').data('facing', 'boot');
+        } else {
+            console.log('boot set');
+            $('#player2-footing').data('facing', 'blade');
+        }
     });
 });
