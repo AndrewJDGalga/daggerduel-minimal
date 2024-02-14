@@ -9,26 +9,15 @@ const generateTokens = (pageTarget, elementToGenerate, count) =>{
 $("document").ready(()=>{
     //generate tokens
     $(()=>{
-        generateTokens('#game--board_black-tokens', '<img class="game-token" src="assets/blackBladeToken.svg" alt="Black Blade Face token."></li>', tokenCount);
-        generateTokens('#game--board_black-tokens', '<img class="game-token" src="assets/blackBootToken.svg" alt="Black Boot Face token."></li>', tokenCount);
-        generateTokens('#game--board_black-tokens', '<img class="game-token" src="assets/blackBlankToken.svg" alt="Black Blade Face token."></li>', tokenCount);
+        generateTokens('#game--board_black-tokens_blades', '<img class="game-token" src="assets/blackBladeToken.svg" alt="Black Blade Face token."></li>', tokenCount);
+        generateTokens('#game--board_black-tokens_boots', '<img class="game-token" src="assets/blackBootToken.svg" alt="Black Boot Face token."></li>', tokenCount);
+        generateTokens('#game--board_black-tokens_blank', '<img class="game-token" src="assets/blackBlankToken.svg" alt="Black Blade Face token."></li>', tokenCount);
 
         generateTokens('#game--board_white-tokens', '<img class="game-token" src="assets/whiteBladeToken.svg" alt="White Blade Face token."></li>', tokenCount);
         generateTokens('#game--board_white-tokens', '<img class="game-token" src="assets/whiteBootToken.svg" alt="White Boot Face token."></li>', tokenCount);
         generateTokens('#game--board_white-tokens', '<img class="game-token" src="assets/whiteBlankToken.svg" alt="White Blade Face token."></li>', tokenCount);
         //set tokens as draggable by class
         $('.game-token').draggable();
-        /*
-        for(let i = 0; i < tokenCount; i++) {
-            $('#game--board_black-tokens').append('<img class="game-token" src="assets/blackBladeToken.svg" alt="Black Blade Face token."></li>');
-            $('#game--board_black-tokens').append('<img class="game-token" src="assets/blackBootToken.svg" alt="Black Boot Face token."></li>');
-            $('#game--board_black-tokens').append('<img class="game-token" src="assets/blackBlankToken.svg" alt="Black Blade Face token."></li>');
-
-            $('#game--board_white-tokens').append('<img class="game-token" src="assets/whiteBladeToken.svg" alt="White Blade Face token."></li>');
-            $('#game--board_white-tokens').append('<img class="game-token" src="assets/whiteBootToken.svg" alt="White Boot Face token."></li>');
-            $('#game--board_white-tokens').append('<img class="game-token" src="assets/whiteBlankToken.svg" alt="White Blade Face token."></li>');
-        }
-        */
     })
     $('#player1-footing').on('click', ()=>{
         
