@@ -1,6 +1,7 @@
 $("document").ready(()=>{
     $(()=>{
-        $('#draggable').draggable();
+        //$('#draggable').draggable();
+        $('.game-token').draggable();
     });
     $('#player1-footing').on('click', ()=>{
         

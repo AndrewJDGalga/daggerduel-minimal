@@ -29,6 +29,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+.game-token {
+    width: 4%;
+    min-width: var(--three-rem);
+}
 #game--board {
     width: 50%;
     min-width: 500px;

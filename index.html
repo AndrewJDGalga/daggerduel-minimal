@@ -89,17 +89,22 @@
                 </div>
                 <div class="player--aid_status">
                     <img class="game-icon" src="assets/heart-beats.svg" alt="Health icon.">
-                    <input id="health-tracker" type="number" name="health-tracker" class="small-number-tracker" min="0" max="3">
+                    <input id="health-tracker" type="number" name="health-tracker" class="small-number-tracker" min="0" max="3" value="3">
                     <img class="game-icon" src="assets/opening.svg" alt="Special icon.">
-                    <input id="special-tracker" type="number" name="special-tracker" class="small-number-tracker" min="0" max="2">
+                    <input id="special-tracker" type="number" name="special-tracker" class="small-number-tracker" min="0" max="2" value="0">
                     <img class="game-icon" src="assets/swipe.svg" alt="Anger icon.">
-                    <input id="anger-tracker" type="number" name="anger-tracker" class="small-number-tracker" min="0" max="2">
+                    <input id="anger-tracker" type="number" name="anger-tracker" class="small-number-tracker" min="0" max="2" value="0">
                 </div>
             </div>
             <div class="button-gaurd">
                 <button class="footing-tracker" id="player1-footing" data-facing="blade">
                     (Click)Flip on turn start <img class="game-icon" src="assets/blackBladeToken.svg" alt="Player 1's current Footing.">
                 </button>
+            </div>
+            <div id="game--board_black-tokens">
+                <img class="game-token" src="assets/blackBladeToken.svg" alt="Black Blade Face token."></li>
+                <img class="game-token" src="assets/blackBootToken.svg" alt="Black Boot Face token."></li>
+                <img class="game-token" src="assets/blackBlankToken.svg" alt="Black Blade Face token."></li>
             </div>
             <img id="game--board" src="assets/board.svg" alt="7x7 hex game board">
             <div class="player--aid">
@@ -127,6 +132,7 @@
                     (Click)Flip on turn start <img id="player2-footing" class="game-icon" src="assets/whiteBladeToken.svg" alt="Player 2's current Footing.">
                 </button>
             </div>
+            <div id="game--board_white-tokens"></div>
 
             <div id="draggable">Drag</div>
 
