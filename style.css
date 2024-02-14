@@ -6,6 +6,12 @@ body {
 .game-icon {
     width: var(--three-rem);
 }
+.character-image{
+    width: calc(var(--three-rem) * 3);
+}
+.small-number-tracker {
+    width: 2rem;
+}
 
 #game--board {
     width: 50%;
