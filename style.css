@@ -6,13 +6,25 @@ body {
 .game-icon {
     width: var(--three-rem);
 }
-.character-image{
-    width: calc(var(--three-rem) * 3);
-}
 .small-number-tracker {
     width: 2rem;
 }
-
+.player--aid {
+    display: flex;
+    flex-direction: row;
+}
+.player--aid_character {
+    display: grid;
+    grid-template-columns: calc(var(--three-rem) * 4) calc(var(--three-rem) * 4);
+}
+.character-image{
+    width: calc(var(--three-rem) * 3);
+    grid-column: span 2;
+}
+.player--aid_status {
+    display: flex;
+    flex-direction: column;
+}
 #game--board {
     width: 50%;
     min-width: 500px;
