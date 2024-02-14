@@ -13,9 +13,9 @@ $("document").ready(()=>{
         generateTokens('#game--board_black-tokens_boots', '<img class="game-token" src="assets/blackBootToken.svg" alt="Black Boot Face token."></li>', tokenCount);
         generateTokens('#game--board_black-tokens_blank', '<img class="game-token" src="assets/blackBlankToken.svg" alt="Black Blade Face token."></li>', tokenCount);
 
-        generateTokens('#game--board_white-tokens', '<img class="game-token" src="assets/whiteBladeToken.svg" alt="White Blade Face token."></li>', tokenCount);
-        generateTokens('#game--board_white-tokens', '<img class="game-token" src="assets/whiteBootToken.svg" alt="White Boot Face token."></li>', tokenCount);
-        generateTokens('#game--board_white-tokens', '<img class="game-token" src="assets/whiteBlankToken.svg" alt="White Blade Face token."></li>', tokenCount);
+        generateTokens('#game--board_white-tokens_blades', '<img class="game-token" src="assets/whiteBladeToken.svg" alt="White Blade Face token."></li>', tokenCount);
+        generateTokens('#game--board_white-tokens_boots', '<img class="game-token" src="assets/whiteBootToken.svg" alt="White Boot Face token."></li>', tokenCount);
+        generateTokens('#game--board_white-tokens_blank', '<img class="game-token" src="assets/whiteBlankToken.svg" alt="White Blade Face token."></li>', tokenCount);
         //set tokens as draggable by class
         $('.game-token').draggable();
     })
