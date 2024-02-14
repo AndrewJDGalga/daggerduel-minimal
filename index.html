@@ -96,19 +96,25 @@
                     <input type="number" name="anger-tracker" class="small-number-tracker" min="0" max="2" value="0">
                 </div>
             </div>
-            <div class="button-gaurd">
-                <button class="footing-tracker" id="player1-footing" data-facing="blade">
-                    (Click)Flip on turn start 
-                    <img id="footing-img-black" class="game-icon" src="assets/blackBladeToken.svg" alt="Player 1's current Footing.">
-                </button>
-            </div>
             <h4>Token Supply (20 of each)</h4>
             <div class="game--board_token-supply">
                 <div id="game--board_black-tokens_blades" class="token-holder"></div>
                 <div id="game--board_black-tokens_boots" class="token-holder"></div>
                 <div id="game--board_black-tokens_blank" class="token-holder"></div>
             </div>
+            <div class="button-gaurd">
+                <button class="footing-tracker" id="player1-footing" data-facing="blade">
+                    (Click)Flip on turn start 
+                    <img id="footing-img-black" class="game-icon" src="assets/blackBladeToken.svg" alt="Player 1's current Footing.">
+                </button>
+            </div>
             <img id="game--board" src="assets/board.svg" alt="7x7 hex game board">
+            <div class="button-gaurd">
+                <button id="player2-footing" class="footing-tracker" data-facing="blade">
+                    (Click)Flip on turn start 
+                    <img id="footing-img-white" class="game-icon" src="assets/whiteBladeToken.svg" alt="Player 2's current Footing.">
+                </button>
+            </div>
             <h4>Token Supply (20 of each)</h4>
             <div class="game--board_token-supply">
                 <div id="game--board_white-tokens_blades" class="token-holder"></div>
@@ -134,12 +140,6 @@
                     <img class="game-icon" src="assets/swipe.svg" alt="Anger icon.">
                     <input type="number" name="anger-tracker" class="small-number-tracker" min="0" max="2" value="0">
                 </div>
-            </div>
-            <div class="button-gaurd">
-                <button id="player2-footing" class="footing-tracker" data-facing="blade">
-                    (Click)Flip on turn start 
-                    <img id="footing-img-white" class="game-icon" src="assets/whiteBladeToken.svg" alt="Player 2's current Footing.">
-                </button>
             </div>
             <div id="game--board_white-tokens"></div>
         </article>
