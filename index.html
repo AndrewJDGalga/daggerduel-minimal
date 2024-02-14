@@ -22,17 +22,35 @@
             <ul>
                 <li>The Black player must place 2 pieced to start the game.</li>
                 <ul>
-                    <li>Both pieces must match Black's face up Footing indicator.</li>
+                    <li>Both pieces must match Black's face up Footing Tracker.</li>
+                    <ul>
+                        <li>Blade Token example: <img src="assets/blackBladeToken.svg" alt="Black Blade Face token."></li>
+                        <li>Boot Token example: <img src="assets/blackBootToken.svg" alt="Black Boot Face token."></li>
+                    </ul>
                     <li>The first piece must go into the marked center space: <img src="assets/player1Start.svg" alt="Center P1 start hex."></li>
                     <li>The second piece may go anywhere on the board.</li>
                 </ul>
                 <li>Once Black has placed 2 pieces, play proceeds to White.</li>
             </ul>
             <h4>Following turns</h4>
-            <ul></ul>
+            <ol>
+                <li>Flip your Footing Tracker to the opposite side.</li>
+                <li>Select 4 tokens matching your Footing Tracker's current facing from your Token Supply. These represent Potential Actions.</li>
+                <li>Review your abilities and decide on your moves for the turn:</li>
+                <ul>
+                    <li>You may place all or some of your 4 Potential Action tokens face up onto any unoccupied hexes on the board. This includes Barrier hexes. Barrier hexes cannot be surrounded by pieces, and so pieces on them are completely safe from Normal Capture: <img src="assets/safeHex.svg" alt="Example of a Barrier hex on the board."></li>
+                    <li>You may return 1 of your 4 Potential Action tokens to your Token Supply to replace 1 of your Opponent's tokens that<strong>doesn't</strong> match thier current Footing with 1 of your other Potential Action tokens.</li>
+                    <li>You may return 1 of your 4 Potential Action tokens to your Token Supply and flip 1 other of your Potential Action tokens to the Faceless side to Take your Technique action.</li>
+                    <ul>
+                        <li>Technique icon:</li>
+                        <li>Faceless Token Example: <img src="assets/blackBlankToken.svg"></li>
+                    </ul>
+                </ul>
+            </ol>
         </article>
         <article class="game--prototype">
             <h2>Try Dagger Duel below!</h2>
+            <p>Disclaimer: Current functionality is limited. You can drag and drop pieces, you can flip the Footing Trackers, and you can raise and lower your Health, Anger, and Special meters. You'll have to rely on the rules above to play.</p>
             <img id="game--board" src="assets/board.svg" alt="7x7 hex game board">
 
             <div id="draggable">Drag</div>
